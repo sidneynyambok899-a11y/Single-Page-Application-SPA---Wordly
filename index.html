@@ -1,40 +1,37 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Wordly — Single Page Dictionary</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <h1>Wordly</h1>
-      <p class="tag">Interactive single-page dictionary</p>
-    </header>
 
-    <main class="app">
-      <section class="search">
-        <form id="searchForm" aria-label="Search for a word">
-          <input id="searchInput" name="word" type="search" placeholder="Search a word (e.g. serendipity)" aria-label="Search input" required />
-          <button type="submit" id="searchBtn">Search</button>
-          <button type="button" id="themeToggle" aria-pressed="false">Toggle Theme</button>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sidney's Wordly Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for the dictionary app -->
+    <div class="container">
+        <h1>Sidney's Wordly Dictionary</h1>
+        <p>Search for word definitions</p>
+
+        <!-- Search form -->
+        <form id="searchForm">
+            <input type="text" id="wordInput" placeholder="Type a word here...">
+            <button type="submit">Search</button>
         </form>
-      </section>
 
-      <section id="results" aria-live="polite" class="results">
-        <!-- Dynamic results appear here -->
-      </section>
+        <!-- Loading message -->
+        <div id="loading" style="display: none;">Loading...</div>
 
-      <aside class="favorites">
-        <h2>Favorites</h2>
-        <ul id="favoritesList"></ul>
-      </aside>
-    </main>
+        <!-- Error message -->
+        <div id="error" style="display: none;"></div>
 
-    <footer class="site-footer">
-      <small>Powered by Free Dictionary API — demo only.</small>
-    </footer>
+        <!-- Results section -->
+        <div id="results" style="display: none;">
+            <h2 id="wordTitle"></h2>
+            <p id="pronunciation"></p>
+            <button id="audioBtn" style="display: none;">Play Sound</button>
+            <div id="definitions"></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
