@@ -1,0 +1,50 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #4CAF50;
+  color: white;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 200px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#results {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: rgb(212, 9, 9);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(242, 240, 240, 0.1);
+}
+
+.definition {
+  margin-bottom: 1rem;
+}
+
+audio {
+  margin-top: 0.5rem;
+}

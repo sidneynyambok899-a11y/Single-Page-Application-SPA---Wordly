@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Wordly — Single Page Dictionary</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Wordly</h1>
+      <p class="tag">Interactive single-page dictionary</p>
+    </header>
+
+    <main class="app">
+      <section class="search">
+        <form id="searchForm" aria-label="Search for a word">
+          <input id="searchInput" name="word" type="search" placeholder="Search a word (e.g. serendipity)" aria-label="Search input" required />
+          <button type="submit" id="searchBtn">Search</button>
+          <button type="button" id="themeToggle" aria-pressed="false">Toggle Theme</button>
+        </form>
+      </section>
+
+      <section id="results" aria-live="polite" class="results">
+        <!-- Dynamic results appear here -->
+      </section>
+
+      <aside class="favorites">
+        <h2>Favorites</h2>
+        <ul id="favoritesList"></ul>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <small>Powered by Free Dictionary API — demo only.</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
